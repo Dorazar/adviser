@@ -17,6 +17,13 @@ const monthlyPayment = Math.round(
     (Math.pow(1 + monthlyRate, numberOfPayments) - 1)
 )
 
+const trustItems = [
+  '✓ ליווי אישי',
+  '✓ השוואת בנקים',
+  '✓ תמהיל מותאם',
+  '✓ שקיפות מלאה',
+]
+
 
   return (
     <>
@@ -133,12 +140,27 @@ const monthlyPayment = Math.round(
 
       </section>
 
-      <section className="trust">
-        <div>✓ ליווי אישי</div>
-        <div>✓ השוואת בנקים</div>
-        <div>✓ תמהיל מותאם</div>
-        <div>✓ שקיפות מלאה</div>
-      </section>
+<section className="trust">
+  <div className="trust-track">
+    <div className="trust-group">
+      <span>✓ ליווי אישי</span>
+      <span>✓ השוואת בנקים</span>
+      <span>✓ תמהיל מותאם</span>
+      <span>✓ שקיפות מלאה</span>
+      <span>✓ מחזור משכנתא</span>
+      <span>✓ בדיקה ראשונית</span>
+    </div>
+
+    <div className="trust-group" aria-hidden="true">
+      <span>✓ ליווי אישי</span>
+      <span>✓ השוואת בנקים</span>
+      <span>✓ תמהיל מותאם</span>
+      <span>✓ שקיפות מלאה</span>
+      <span>✓ מחזור משכנתא</span>
+      <span>✓ בדיקה ראשונית</span>
+    </div>
+  </div>
+</section>
 
       <section id="services" className="section">
         <h2>השירותים שלנו</h2>

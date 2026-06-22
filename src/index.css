@@ -278,20 +278,43 @@ nav {
 /* TRUST */
 
 .trust {
-  padding: 28px 8%;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-
+  overflow: hidden;
   background: var(--navy);
   color: white;
+  padding: 22px 0;
+  white-space: nowrap;
 }
 
-.trust div {
-  text-align: center;
-  font-weight: 700;
+.trust-track {
+  display: flex;
+  width: max-content;
+  animation: trustMarquee 28s linear infinite;
 }
+
+.trust-group {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-left: 60px;
+}
+
+.trust-group span {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--cream);
+}
+
+@keyframes trustMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+
 
 /* SECTIONS */
 
